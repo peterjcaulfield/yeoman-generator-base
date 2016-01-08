@@ -1,0 +1,22 @@
+{
+  "name": "generator-base",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterjcaulfield/yeoman-generator-base.git"
+  },
+  "author": "peter caulfield <peterjcaulfield@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterjcaulfield/yeoman-generator-base/issues"
+  },
+  "homepage": "https://github.com/peterjcaulfield/yeoman-generator-base#readme",
+  "dependencies": {
+    "yeoman-generator": "^0.22.2"
+  }
+}
