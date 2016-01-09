@@ -19,5 +19,9 @@
   "dependencies": {
     "yeoman-generator": "^0.22.2",
     "lodash": "*"
+  },
+  "devDependencies": {
+    "yeoman-assert": "*",
+    "yeoman-test": "*" 
   }
 }
