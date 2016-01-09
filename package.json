@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "yeoman-assert": "*",
-    "yeoman-test": "*" 
+    "yeoman-test": "*" ,
+    "mocha": "*"
   }
 }
