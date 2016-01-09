@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/peterjcaulfield/yeoman-generator-base#readme",
   "dependencies": {
-    "yeoman-generator": "^0.22.2"
+    "yeoman-generator": "^0.22.2",
+    "lodash": "*"
   }
 }

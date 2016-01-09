@@ -8,6 +8,8 @@ module.exports = generators.Base.extend({
 
     generators.Base.apply(this, arguments);
 
+    this.config.save();
+
   },
   // base generator method
   // methods defined in the base generator will be available in any
