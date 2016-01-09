@@ -9,7 +9,6 @@ module.exports = generators.Base.extend({
     generators.Base.apply(this, arguments);
 
   },
-
   // base generator method
   // methods defined in the base generator will be available in any
   // generators that extend this base. All methods in the base generator

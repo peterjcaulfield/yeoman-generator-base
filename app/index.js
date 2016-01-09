@@ -20,7 +20,7 @@ module.exports = AppGeneratorBase.extend({
     this.$cmd();
     console.log('hello from app command auto execute');
     this.helper();
-  },
+  }
 
 });
   
