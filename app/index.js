@@ -14,12 +14,15 @@ module.exports = AppGeneratorBase.extend({
     }
 
   },
-  // this will auto execute when app cmd is run
-  method1: function () {
-    // executing base generator method
-    this.$cmd();
-    console.log('hello from app command auto execute');
-    this.helper();
+  getUserAppPrefs: function () {
+    // add prompt here 
+  },
+  createRootFiles: function () {
+    this.$writeFileFromTemplate(
+      'README.md',
+      './README.md',
+      { title: '' }
+    );
   }
 
 });

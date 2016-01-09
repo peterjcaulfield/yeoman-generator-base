@@ -16,6 +16,20 @@ module.exports = generators.Base.extend({
   // so as the avoid collisions in method names.
   $cmd: function () {
     console.log('hello from base generator');
+  },
+  /**
+   * Function to write file to file system from a template
+   *
+   * @param string src - the template file relative to template dir
+   * @param string dest - the path to the output file relative to the project root 
+   * @param object params - the template params
+   */
+  $writeFileFromTemplate: function(src, dest, params) {
+      this.fs.copyTpl(
+        this.templatePath(src),
+        this.destinationPath(dest),
+        params
+      );
   }
 
 });
