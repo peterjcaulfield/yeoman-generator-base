@@ -10,12 +10,13 @@ module.exports = AppGeneratorBase.extend({
 
     AppGeneratorBase.apply(this, arguments);
 
-    // define instance methods here which don't auto execute
-    this.helper = function () {
-      console.log('hello from app command instance method');
-    };
-
-    this.getAppName = function (callback) {
+    /**
+     * Initialise the generator state 
+     *
+     * @param function callback - the callback to be executed once initialisation is done
+     *                            this should be the actual generation code
+     */
+    this.initialize = function (callback) {
 
       this.prompt({
         type: 'input',
@@ -28,15 +29,21 @@ module.exports = AppGeneratorBase.extend({
     };
 
   },
-  // create the files at the root of the project
-  createRootFiles: function () {
-    this.getAppName(function (answer) {
+  /**
+   * The auto executed generator function
+   */
+  generate: function () {
+
+    this.initialize(function (answer) {
+
       this.config.set('appname', answer.appname);
+
       this.$writeFileFromTemplate(
         'README.md',
         'README.md',
         { title: answer.appname }
       );
+
     });
   }
 
