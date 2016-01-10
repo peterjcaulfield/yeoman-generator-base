@@ -6,7 +6,7 @@ describe('base:app', function() {
 
   before(function (done) {
     helpers.run(path.join(__dirname, '../app'))
-      .withPrompts({ appname: 'foo' })
+      .withPrompts({ appname: 'joeyjoejoejuniorshabadoo' })
       .on('end', done);
   });  
 
@@ -15,7 +15,7 @@ describe('base:app', function() {
   });
 
   it('generates README using supplied app name from prompt', function () {
-    assert.fileContent('README.md', '# foo #');
+    assert.fileContent('README.md', '# joeyjoejoejuniorshabadoo #');
   });
 
 });
