@@ -2,11 +2,15 @@
 
 var generators = require('yeoman-generator');
 
+var constants = require('./constants.js');
+
 module.exports = generators.Base.extend({
   
   constructor: function () {
 
     generators.Base.apply(this, arguments);
+
+    this.$constants = constants;
 
   },
   // base generator method
